@@ -7,21 +7,21 @@ const dataSeed = {
         icon: { src: "/brief-icon.png", alt: "", width: 300, height: 300 },
         title: "Brief",
         content:
-          `Complete brief writing or simple guidance on what to include, we've got you covered`,
+          `Complete <&brief writing or simple guidance&> on what to include, we've got you covered`,
       },
       {
         id: 2,
         icon: { src: "/search-icon.png", alt: "", width: 300, height: 300 },
         title: "Search",
         content:
-          "In-depth agency search covering; criteria matching, door knocking and due-dilligence vetting.",
+          "In-depth agency search covering; <&criteria matching&>, door knocking and due-dilligence vetting.",
       },
       {
         id: 3,
         icon: { src: "/pitch-icon.png", alt: "", width: 300, height: 300 },
         title: "Pitch",
         content:
-          "Comprehensive pitch management, including comms, diary management and pitch hosting",
+          "Comprehensive <&pitch management&>, including comms, diary management and pitch hosting",
       },
     ],
     video: { src: "/video.png", alt: "Home Img", width: 800, height: 500 },
