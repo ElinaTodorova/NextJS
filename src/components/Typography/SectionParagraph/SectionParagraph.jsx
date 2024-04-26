@@ -1,5 +1,4 @@
 import "./SectionParagraph.sass";
-import parse from 'html-react-parser';
 
 export default function SectionParagraph({ data }) {
     let formattedData = [];
