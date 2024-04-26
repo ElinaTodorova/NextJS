@@ -1,4 +1,4 @@
-const data = {
+const dataSeed = {
     title: "Managed agency selection",
     subtitle: "Stengthen your onboarding process",
     cards: [
@@ -33,4 +33,4 @@ const data = {
     },
   }
 
-  export default data;
+  export default dataSeed;
