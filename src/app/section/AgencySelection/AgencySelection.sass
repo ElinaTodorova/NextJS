@@ -1,0 +1,70 @@
+.bigHeading 
+    margin-top: 0.5rem
+    margin-bottom: 0.5rem
+    text-align: center
+    @media (min-width: 1024px) 
+        margin-top: 3rem
+        margin-bottom: 0.5rem
+
+.mainContainer 
+     align-items: center
+     position: relative
+     display: flex
+     flex-direction: column
+
+.textContainer
+    color: black
+    width: 50%
+    margin: 0 auto
+    font-family: sans-serif
+    position: relative
+    z-index: 100
+    margin-bottom: 1.5rem
+
+.flex_container
+    width: 100%
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: 3rem
+    margin-top: 2rem
+  
+    @media (min-width: 1024px)
+      flex-direction: row
+
+.background
+    width: 50vw
+    height: 40svh
+    margin-left: auto
+    display: block
+    position: absolute
+    bottom: 2rem
+    top: 10rem
+    left: calc(100%/3 - 200px - 2*1em)
+    background-image: url("/background.png")
+    background-size: cover
+
+    @media (min-width: 768px) 
+      bottom: 0
+      top: 4rem
+      left: calc(100%/3 - 200px - 2*7em)
+      width: 40vw
+      height: 50vh
+      
+
+    @media (min-width: 1024px)
+      bottom: 0
+      top: 10rem
+      width: 50vw
+      height: 60vh
+
+.flexItemContainer 
+    height: 100%
+    display: flex
+    flex-direction: column
+    gap: 1.5rem
+    & > :nth-child(3)
+      border : 1.5px solid rgb(95, 152, 226)
+    

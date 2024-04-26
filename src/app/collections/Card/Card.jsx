@@ -2,20 +2,17 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import "./Card.sass";
 
-import {
-  StyledCard,
-  StyledTitleFlexItem,
-  StyledInfoContainer,
-  StyledImgContainer,
-  BlueLink
-} from "./elements.jsx";
-import { SectionParagraph } from "@/components/Typography/SectionParagraph.jsx";
+import SectionParagraph from "@/components/Typography/SectionParagraph/SectionParagraph.jsx";
+import SectionSubheading from "@/components/Typography/SectionSubheading/SectionSubheading.jsx";
+import CardContainer from "@/components/Containers/CardContainer/CardContainer.jsx";
+import InfoContainer from "@/components/Containers/InfoContainer/InfoContainer.jsx";
 
 export const Card = ({ icon, index, ...card }) => {
   return (
-    <StyledCard>
-      <StyledImgContainer>
+    <CardContainer>
+      <div className="icon">
         <Image
           layout="responsive"
           src={icon.src}
@@ -23,19 +20,17 @@ export const Card = ({ icon, index, ...card }) => {
           width={icon.width}
           height={icon.height}
         />
-      </StyledImgContainer>
-      <StyledInfoContainer>
-        <StyledTitleFlexItem>
-          {index === 2 ? (
-            <Link href="/" passHref>
-              <BlueLink>{card.title}</BlueLink>
-            </Link>
-          ) : (
-            card.title
-          )}
-        </StyledTitleFlexItem>
-        <SectionParagraph>{card.content}</SectionParagraph>
-      </StyledInfoContainer>
-    </StyledCard>
+      </div>
+      <InfoContainer>
+        {card.title === "Pitch" ? (
+          <Link href="/">
+            <SectionSubheading data={card.title} />
+          </Link>
+        ) : (
+          <SectionSubheading data={card.title} />
+        )}
+        <SectionParagraph data={card.content} />
+      </InfoContainer>
+    </CardContainer>
   );
 };

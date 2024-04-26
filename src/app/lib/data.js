@@ -7,7 +7,7 @@ const data = {
         icon: { src: "/brief-icon.png", alt: "", width: 300, height: 300 },
         title: "Brief",
         content:
-          "Complete brief writing or simple guidance on what to include, we've got you covered",
+          `Complete brief writing or simple guidance on what to include, we've got you covered`,
       },
       {
         id: 2,
